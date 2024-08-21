@@ -1,0 +1,30 @@
+---
+layout: post
+title: "体調予測ツール"
+---
+
+### 概要
+サービス名：未定
+サービス内容：睡眠データや気象データから自分の体調を予測するシステム
+
+### 目標
+  1. 明日の体調を予測する
+  2. 体調にもっとも影響を与えるものを特定する
+  3. それはおそらく睡眠なので、睡眠に最も影響を与えるものを特定する
+
+### システム構成
+
+- 仮想環境
+  - docker + poerty
+- フロント
+  - Xcode swift (iOS app)
+- バック
+  - Google Cloud
+    - Cloud IoT Core
+    - Cloud Functions
+    - Cloud storage
+    - BigQuery
+    - AI Platform
+- 利用API
+  - HealthKit API
+  - Open Weather API
